@@ -1,0 +1,31 @@
+fixmedinsCode
+fixmedinsName
+hilistCode
+hilistName
+insuAdmdvs
+begndate
+enddate
+overlmtDspoWay
+hilistPricUplmtAmt
+valiFlag
+rchkFlag
+
+
+import { renderDate } from '../../../api/common'
+const pubMedinsListLmtpricEvtCDTO = [
+  { title: '定点医药机构编号', dataIndex: 'fixmedinsCode', width: 200, align: 'center' },
+  { title: '定点医药机构名称', dataIndex: 'fixmedinsName', width: 200, align: 'center' },
+  { title: '医疗目录编码', dataIndex: 'hilistCode', width: 220, align: 'center' },
+  { title: '医保目录名称', dataIndex: 'hilistName', width: 220, align: 'center' },
+  { title: '医保区划', dataIndex: 'insuAdmdvs', align: 'center', width: 220, overflowTooltip: true, collectionType: 'INSU_ADMDVS' },
+  { title: '开始日期', dataIndex: 'begndate', align: 'center', customRender: renderDate },
+  { title: '结束日期', dataIndex: 'enddate', align: 'center', customRender: renderDate }
+  { title: '医保目录超限处理方式', dataIndex: 'overlmtDspoWay', align: 'center', collectionType: 'OVERLMT_DSPO_WAY' },
+  { title: '医保目录定价上限金额', dataIndex: 'hilistPricUplmtAmt', align: 'center' },
+  { title: '医保目录定价上限金额', dataIndex: 'hilistPricUplmtAmt', align: 'center' },
+  { title: '有效状态', dataIndex: 'valiFlag', width: 100, align: 'center', collectionType: 'VALI_FLAG' },
+  { title: '审核状态', dataIndex: 'rchkFlag', width: 150, align: 'center', collectionType: 'RCHK_FLAG' }
+]
+
+
+/web/pubMedinsListLmtpric/unRckList
